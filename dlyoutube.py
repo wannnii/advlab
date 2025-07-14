@@ -1,10 +1,10 @@
 # pip install yt_dlp ติตตั้ง library yt_dlp
 
-import yt_dlp
+import yt_dlp #สวัสดี
 def download_youtube_video(url, save_path="."):
     ydl_opts = {
         'outtmpl': f'{save_path}/%(title)s.%(ext)s',
-        'format': 'best'
+        'format': 'best' 
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
